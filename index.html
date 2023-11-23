@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom properties</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <script src="./scripts/script.js"></script>
+</head>
+<body>
+  <nav>
+    <img src="assets/images/obastyleguide.png" alt="oba logo" />
+
+    <button class="tablink" onclick="switchTab(event, 'images')">
+      Afbeeldingen
+    </button>
+
+    <button class="tablink" onclick="switchTab(event, 'logos')">
+      Logo's
+    </button>
+
+    <button class="tablink" onclick="switchTab(event, 'layout')">
+      Layout
+      </button>
+  </nav>
+
+  <main>
+    <section id="images" class="tabcontent">
+        <h2>Afbeeldingen</h2>
+        <p>
+          Oba maakt veel gebruik van banners met een ratio van 16:5. Deze
+          afbeeldingen worden als background-image gebruikt. Verder hebben bijna
+          alle afbeeldingen een ratio van 4:3. Op alle afbeeldingen zijn mensen afgebeeld
+          die gebruik maken van producten van de oba. Het is belangrijk
+          dat er veel verschillende soorten mensen worden gebruikt, 
+          omdat oba het diverse Amsterdam moet aanspreken. 
+        </p>
+        <img src="assets/images/oba-images.jpeg" alt="oba banner" width="500px" />
+        <img src="assets/images/oba-images2.jpeg" alt="oba image" width="500px" />
+    </section>
+
+    <section id="logos" class="tabcontent">
+      <h2>Logo’s</h2>
+      <p>
+        Voor oba corporate wordt het basislogo gebruikt. Hoofdkleur is rood. Om
+        een kleurig palet te krijgen wordt zwart niet meer als tweede kleur
+        gebruikt, maar zijn er vier voorkeurskleuren uitgekozen. Uitingen zijn
+        bij voorkeur tweetalig (Nederlands en Engels).
+      </p>
+      <h3>logo, vestigingen, submerken, producten &amp; diensten</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              laag 1: corporate logo<br>rood, wit, zwar, grijs
+            </td>
+            <td>
+              <img src="assets/images/obalogos.png" alt="oba logos" width="500px" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              laag 2: vestiging<br>rood + grijs<br>
+            </td>
+            <td>
+              <img src="assets/images/obavestiging.png" alt="oba logos" width="500px" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              laag 3: submerk<br>kleur + zwart<br>
+            </td>
+            <td>
+              <img src="assets/images/obasubmerk.png" alt="oba logos" width="500px" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              laag 4: producten en diesten<br>zwart + extra kleurenpalet<br>
+            </td>
+            <td>
+              <img src="assets/images/obaproduct.png" alt="oba logos" width="500px" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              laag 5: samenwerken<br>kleur + zwart<br>
+            </td>
+            <td>
+              <img src="assets/images/obapartner.png" alt="oba logos" width="500px" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h3>Meer voorbeelden</h3>
+      <br>
+      <img src="assets/images/obalogos2.png" alt="oba logos" width="500px" />
+      <img src="assets/images/obalogos3.png" alt="oba logos" width="500px" />
+      <br>
+      <img src="assets/images/obalogos4.png" alt="oba logos" width="300px" />
+    </section>
+
+    <section id="layout" class="tabcontent">
+      <h2>Layout</h2>
+      <p>
+        De layout van de oba moet altijd beginnen met bovenaan een banner die
+        het hele scherm vult, waarna daaronder een kolom van 2 of 3 blokken met
+        plaatjes en/of tekst is.
+      </p>
+      <img src="assets/images/oba-layout.png" alt="oba layout" width="800px" />
+      <p>
+        Qua responsibility, worden de 2 of 3 kolommen gekrompen in 1 kolom
+        wanneer je de website op je telefoon bekijkt.
+      </p>
+      <br>
+      <h2>Afbeelding & tekst</h2>
+      <h3>Tablet</h3>
+      <p>
+        Er is nog een klein verschil tussen de layout van een tablet en telefoon
+        als je kijkt naar afbeeldingen met tekts er naast.<br />
+        Bij een tablet heb je 2 kolommen waarbij de afbeelding de zelfde grootte
+        heeft als de kolom er naast.
+      </p>
+      <img
+        src="assets/images/Oba-layout-tablet.png"
+        alt="oba layout tablet"
+        width="500px "
+      />
+      <img src="assets/images/oba-layout2.png" alt="oba layout" width="300px" align="right"/> 
+      <br>
+      <h3>Mobile</h3>
+      <p>
+        Bij een telefoon moet de tekts onder de afbeelding komen. De afbeelding
+        mag dan ook wat groter worden weergegeven.
+      </p> 
+      <img
+        src="assets/images/Oba-layout-mobile.png"
+        alt="oba layout tablet"
+        width="400px" 
+      />
+    </section>
+</main>
+   
+</body>
+</html>
