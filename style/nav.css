@@ -18,7 +18,7 @@ nav img:nth-child(1) {
   margin-bottom: 2rem;
 }
 
-nav button {
+nav a {
   width: 100%;
   padding: 15px 10px;
   transition: 0.3s ease;
@@ -29,24 +29,26 @@ nav button {
   border: none;
   cursor: pointer;
   background-color: var(--primary-color);
+  text-decoration: none;
+  color: black;
 }
 
-nav button:not(:first-child) {
+nav a:not(:first-child) {
   margin-top: 5px;
 }
 
-nav button i {
+nav a i {
   font-size: 0.7rem;
   margin-left: 4px;
 }
 
-nav button:hover {
+nav a:hover {
   background-color: var(--accent-color);
   transition: 0.3s ease;
   padding: 15px 0 15px 20px;
 }
 
-nav button.active {
+nav a.active {
   background-color: var(--body-color);
   padding: 15px 0 15px 20px;
 }

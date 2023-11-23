@@ -14,6 +14,7 @@
   }
 
 :root {
+  /* Kleuren */
     --body-color: #e4e9f7;
     --primary-color: #fff;
     --accent-color: #ff0000;
@@ -21,12 +22,19 @@
     --text-color: #707070;
     --selection-color: #000;
   
+    /* Padding */
     --border: 0.1rem solid rgba(0, 0, 0, 0.1);
     --border-hover: 0.1rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   
+    /* Font */
     --code-font: "Source Code Pro", monospace;
     --primary-font: "Avenir-roman", "Montserrat", "Poppins", sans-serif;
+    --line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 *,
@@ -36,8 +44,6 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: var(--primary-font);
 }
 
@@ -46,28 +52,32 @@ body {
   background-color: var(--body-color);
 }
 
+h1 {
+  font-size: 2em;
+}
+
 ::selection {
   background-color: var(--accent-color);
   color: var(--primary-color);
 }
 
+main {
+  margin-left: 270px;
+}
+
 section {
-  position: absolute;
-  top: 0;
-  top: 0;
-  left: 260px;
   min-height: 100vh;
   background-color: var(--body-color);
   transition: 0.5s;
   padding: 4em;
 }
 
-section h2 {
-  padding-bottom: 0.5em;
+section *:not(h1) {
+  margin-left: 20px;
 }
 
 p {
-  line-height: 1.5;
+  line-height: var(--line-height);
   font-size: 16px;
   max-width: 35em;
 }
@@ -80,7 +90,7 @@ code {
   color: rgb(188, 178, 125);
   max-width: 35em;
   border-radius: 10px;
-  line-height: 1.5;
+  line-height: var(--line-height);
 }
 
 #logos table, #logos tr, #logos td {
